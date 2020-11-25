@@ -55,7 +55,7 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item ">
-                            <a href="#" class="nav-link ">
+                            <a href="index.html" class="nav-link ">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -65,7 +65,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class="nav-link  ">
+                            <a href="manage_customer.html" class="nav-link  ">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Manage Customers
@@ -75,7 +75,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class="nav-link active">
+                            <a href="manage_items.html" class="nav-link active">
                                 <i class="nav-icon fas fa-list-ol"></i>
                                 <p>
                                     Manage Items
@@ -85,7 +85,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class="nav-link ">
+                            <a href="place_orders.html" class="nav-link ">
                                 <i class="nav-icon fas fa-cart-plus"></i>
                                 <p>
                                     Place Orders
@@ -95,7 +95,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class="nav-link ">
+                            <a href="search_orders.html" class="nav-link ">
                                 <i class="nav-icon fas fa-search"></i>
                                 <p>
                                     Search Orders
@@ -123,7 +123,7 @@
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                 <li class="breadcrumb-item active">Manage Items</li>
                             </ol>
                         </div><!-- /.col -->
@@ -190,6 +190,62 @@
                 </div><!-- /.container-fluid -->
             </section>
             <!-- /.content -->
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" placeholder="Item Code">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" placeholder="QTY On Hand">
+                    </div>
+
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" placeholder="Unit Price">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Description">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Save</button>
+                <button type="submit" class="btn btn-danger">Update</button>
+
+            </form>
+
+            <br><br>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Item Code</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">QTY On Hand</th>
+                        <th scope="col">Unit Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Good</td>
+                        <td>1</td>
+                        <td>250</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Good</td>
+                        <td>2</td>
+                        <td>300</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Good</td>
+                        <td>3</td>
+                        <td>150</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </div>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
