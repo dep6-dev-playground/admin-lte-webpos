@@ -55,7 +55,7 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item ">
-                            <a href="#" class="nav-link ">
+                            <a href="index.html" class="nav-link ">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -65,7 +65,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class="nav-link  ">
+                            <a href="manage_customer.html" class="nav-link  ">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Manage Customers
@@ -75,7 +75,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class="nav-link ">
+                            <a href="manage_items.html" class="nav-link ">
                                 <i class="nav-icon fas fa-list-ol"></i>
                                 <p>
                                     Manage Items
@@ -85,7 +85,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class="nav-link active">
+                            <a href="place_orders.html" class="nav-link active">
                                 <i class="nav-icon fas fa-cart-plus"></i>
                                 <p>
                                     Place Orders
@@ -95,7 +95,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class="nav-link ">
+                            <a href="search_orders.html" class="nav-link ">
                                 <i class="nav-icon fas fa-search"></i>
                                 <p>
                                     Search Orders
@@ -123,7 +123,7 @@
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                 <li class="breadcrumb-item active">Place Orders</li>
                             </ol>
                         </div><!-- /.col -->
@@ -190,7 +190,87 @@
                 </div><!-- /.container-fluid -->
             </section>
             <!-- /.content -->
+            <form id="main">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h5">Customer Data</h1>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" placeholder="Customer Name">
+                    </div>
+                    <div class="form-group col-md-4">
+
+                        <input type="text" class="form-control" placeholder="Address">
+                    </div>
+                    <div class="form-group col-md-4">
+
+                        <input type="text" class="form-control" placeholder="Customer Salary">
+                    </div>
+                </div>
+
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h5">Item Data</h1>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" placeholder="Description">
+                    </div>
+                    <div class="form-group col-md-4">
+
+                        <input type="text" class="form-control" placeholder="QTY On Hand">
+                    </div>
+                    <div class="form-group col-md-4">
+
+                        <input type="text" class="form-control" placeholder="Unit Price">
+                    </div>
+                </div>
+            </form>
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Item Code</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">QTY On Hand</th>
+                        <th scope="col">QTY</th>
+                        <th scope="col">Total</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>10000</td>
+                        <td>Otto</td>
+                        <td>Otto</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>10000</td>
+                        <td>Thornton</td>
+                        <td>Otto</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>10000</td>
+                        <td>the Bird</td>
+                        <td>Otto</td>
+
+                    </tr>
+                </tbody>
+            </table>
+
+            <button type="submit" class="btn btn-primary">Place Order</button>
+
         </div>
+        <br>
         <!-- /.content-wrapper -->
         <footer class="main-footer">
             <strong>Copyright &copy; 2020 <a href="http://ijse.lk">ijse.lk</a>.</strong>
