@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="node_modules/admin-lte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -55,7 +56,7 @@
                         <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                         <li class="nav-item ">
-                            <a href="#" class="nav-link ">
+                            <a href="index.html" class="nav-link ">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -65,7 +66,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class="nav-link active ">
+                            <a href="manage_customer.html" class="nav-link active ">
                                 <i class="nav-icon fas fa-users"></i>
                                 <p>
                                     Manage Customers
@@ -75,7 +76,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class="nav-link ">
+                            <a href="manage_items.html" class="nav-link ">
                                 <i class="nav-icon fas fa-list-ol"></i>
                                 <p>
                                     Manage Items
@@ -85,7 +86,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class="nav-link ">
+                            <a href="place_orders.html" class="nav-link ">
                                 <i class="nav-icon fas fa-cart-plus"></i>
                                 <p>
                                     Place Orders
@@ -95,7 +96,7 @@
                         </li>
 
                         <li class="nav-item ">
-                            <a href="#" class="nav-link ">
+                            <a href="search_orders.html" class="nav-link ">
                                 <i class="nav-icon fas fa-search"></i>
                                 <p>
                                     Search Orders
@@ -123,7 +124,7 @@
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                 <li class="breadcrumb-item active">Manage Customers</li>
                             </ol>
                         </div><!-- /.col -->
@@ -190,8 +191,70 @@
                 </div><!-- /.container-fluid -->
             </section>
             <!-- /.content -->
+
+
+            <form id="main">
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <input type="text" class="form-control" placeholder="Customer ID">
+                    </div>
+                    <div class="form-group col-md-4">
+
+                        <input type="text" class="form-control" placeholder="Customer Name">
+                    </div>
+                    <div class="form-group col-md-4">
+
+                        <input type="text" class="form-control" placeholder="Customer Salary">
+                    </div>
+                </div>
+                <div class="form-group ">
+
+                    <input type="text" class="form-control" placeholder="Address">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Add Customer</button>
+
+
+            </form>
+            <br><br>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Customer ID</th>
+                        <th scope="col">Customer Name</th>
+                        <th scope="col">Customer Salary</th>
+                        <th scope="col">Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>10000</td>
+                        <td>Otto</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>10000</td>
+                        <td>Thornton</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>10000</td>
+                        <td>the Bird</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
         </div>
         <!-- /.content-wrapper -->
+
+
+
+
         <footer class="main-footer">
             <strong>Copyright &copy; 2020 <a href="http://ijse.lk">ijse.lk</a>.</strong>
             All rights reserved.
